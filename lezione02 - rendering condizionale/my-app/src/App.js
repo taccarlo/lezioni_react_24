@@ -1,6 +1,7 @@
 
 import './App.css';
 
+import jsonString from "./edCivica.json";
 
 const Animals = ["Dog", "Cat", "Frog"];
 console.log(Animals[0]);
@@ -21,10 +22,19 @@ console.log(result);
 result = ages.filter(checkAdult2);
 console.log(result);
 
+let isLoggedIn = true;
+const greeting = isLoggedIn ? "Hello" : null; 
+console.log(greeting);
+
 function App() {
+  let edCivicaList = jsonString["temi"];
   return (
     <div>
-
+      <ul>
+         {edCivicaList.map((item) => (
+          <li key={item.index}>{JSON.stringify(item["list"])}</li>    
+        ))}
+        </ul>
     </div>
   );
 }
