@@ -8,6 +8,7 @@ const router = createBrowserRouter ([
   {path:'/secondPage', element: <SecondPage/>}
   
 ]);
+
 //differenti path caricano differenti pagine
 // npm install react-router-dom
 function App() {
