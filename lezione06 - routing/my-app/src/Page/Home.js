@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 
 function HomePage() {
   return (
@@ -8,7 +9,10 @@ function HomePage() {
          si chiede una nuova richiesta al server che 
          sta facendo funzionare il progetto,
           causa il restart della react application</p>
+
       <p>Go to <a href="/SecondPage">SecondPage</a></p>
+      <p>Go to <Link to="/SecondPage">SecondPage</Link></p>
+      
     </>
   );
 }
