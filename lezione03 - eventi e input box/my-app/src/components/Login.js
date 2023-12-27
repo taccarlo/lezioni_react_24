@@ -1,6 +1,7 @@
 export default function Login() {
     function handleSubmit(){
       console.log("Submitted!");
+      alert("Submitted!");
     }
     return (
       <form>
