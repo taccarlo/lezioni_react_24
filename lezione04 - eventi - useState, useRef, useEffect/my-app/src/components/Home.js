@@ -17,6 +17,14 @@ The useState Hook provides those two things:
     A state setter function to update the variable and trigger React to render the component again.
 
 */
+/*
+In React, useState, as well as any other function starting with ”use”, is called a Hook.
+
+Hooks are special functions that are only available while React is rendering (which we’ll get into in more detail on the next page). They let you “hook into” different React features.
+
+State is just one of those features, but you will meet the other Hooks later.
+The only argument to useState is the initial value of your state variable. In this example, the index’s initial value is set to 0 with useState(0).
+*/
 export default function Home() {
   const [index, setIndex] = useState(0);
 
