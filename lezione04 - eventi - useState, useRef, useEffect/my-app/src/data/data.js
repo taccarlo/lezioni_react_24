@@ -1,4 +1,4 @@
-export const film = [
+export const filmList = [
   {
     title: "A New Hope",
     opening_crawl:
